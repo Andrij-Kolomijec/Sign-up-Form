@@ -80,19 +80,18 @@ body {
     justify-content: center;
     gap: 1rem;
     background-color:rgba(0, 0, 0, 0.5);
-    padding: 20px;
+    padding: 2vh;
     height: auto;
-    flex-wrap: wrap;
 }
 
 .logo {
-    max-height: 145px;
+    height: 15vh;
     color: whitesmoke;
-    
+    max-width: 100%;
 }
 
 .odin-text {
-    font-size: 7rem;
+    font-size: 13vh;
     color: whitesmoke;
     font-family: Norse, sans-serif;
     letter-spacing: 0.5rem;

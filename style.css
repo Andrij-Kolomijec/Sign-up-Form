@@ -103,3 +103,18 @@ body {
     flex: 1;
     min-width: 70vw;
 }
+
+.filler-text {
+    flex: 1;
+    
+}
+
+.form {
+    flex: 1;
+    
+}
+
+.sign-up {
+    flex: 1;
+    
+}

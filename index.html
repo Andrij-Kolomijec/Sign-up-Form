@@ -11,7 +11,6 @@
 <body>
     <div class="content">
 
-
         <div class="image-container">
             <div class="image-overlay">
                 <img class="logo" src="./odin-lined.png" alt="The Odin Project logo">
@@ -19,39 +18,44 @@
             </div>
         </div>
 
-
-
         <div class="form-container">
+
             <div class="filler-text">
                 <p>This is not real online service! You know you need something like this in your life to help you realize your deepest dreams.</p>
                 <p>Sign up <em>now</em> to get started.</p>
                 <p>You <em>know</em> you want to.</p>
             </div>
-            <div>
+
+            <div class="form">
+                <h1>Let's do this!</h1>
                 <form action="">
-                    <label for="fname">First Name</label>
-                    <input type="text" id="fname">
 
-                    <label for="lname">Last Name</label>
-                    <input type="text" id="lname">
+                    <div class="name-row">
+                        <label for="fname">First Name</label>
+                        <input type="text" id="fname" placeholder="Thor">
+                        <label for="lname">Last Name</label>
+                        <input type="text" id="lname" placeholder="Odinson">
+                    </div>
 
-                    <label for="email">Email</label>
-                    <input type="email" id="email">
+                    <div class="contact-row">
+                        <label for="email">Email</label>
+                        <input type="email" id="email" placeholder="thor.odinson@valhalla.asg">
+                        <label for="phone-number">Phone number</label>
+                        <input type="tel" id="phone-number" placeholder="XX XX XX XX">
+                    </div>
 
-                    <label for="phone-number">Phone number</label>
-                    <input type="tel" id="phone-number">
+                    <div class="password-row">
+                        <label for="password">Password</label>
+                        <input type="password" id="password">
+                        <label for="confirm-password">Confirm password</label>
+                        <input type="password" id="confirm-password">
+                    </div>
 
-                    <label for="password">Password</label>
-                    <input type="password" id="password">
-
-                    <label for="confirm-password">Confirm password</label>
-                    <input type="password" id="confirm-password">
-
-                    <button>Create Account</button>
                 </form>
             </div>
 
-            <div>
+            <div class="sign-up">
+                <button>Create Account</button>
                 <p>Already have and account? Log In</p>
             </div>
         </div>

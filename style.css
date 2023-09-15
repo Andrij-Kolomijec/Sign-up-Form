@@ -16,7 +16,6 @@ body {
     display: flex;
     width: 100vw;
     height: 100vh;
-    flex-wrap: wrap;
 }
 
 .image-container {
@@ -24,6 +23,7 @@ body {
     background-position: center;
     background-size: cover;
     flex: 1;
+    /* min-width: 40vh; */
 }
 
 .image-overlay {
@@ -67,12 +67,197 @@ body {
     background: whitesmoke;
     justify-content: flex-end;
     padding: 40px;
+    padding-bottom: 60px;
     font-weight: 600;
 }
 
 .form {
     flex: 1;
+    padding: 40px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    /* border: 2px solid black; */
 }
+
+h1 {
+    /* border: 2px solid black; */
+}
+
+form {
+    display: flex;
+    /* flex-direction: column; */
+    /* justify-content: space-evenly; */
+    /* flex: 1; */
+    /* align-content: stretch; */
+    /* border: 2px solid black; */
+    flex-wrap: wrap;
+    max-width: 50vw;
+}
+
+form > [class$="-row"] {
+    display: flex;
+    /* border: 2px solid yellow; */
+    position: relative;
+
+    /* min-height: 1px; */
+    padding: 25px;
+    /* width: 100%; */
+    /* flex: 1; */
+    /* max-width: 100%; */
+}
+
+/* Form Stuff */
+
+form input[type="text"],
+form input[type="email"],
+form input[type="tel"],
+form input[type="password"] {
+    border: 1px solid #d8d8d8;
+    padding: 24px;
+    font-size: 16px;
+    font-size: 1rem;
+    -webkit-transition: all 0.5s ease-in-out;
+    -moz-transition: all 0.5s ease-in-out;
+    -o-transition: all 0.5s ease-in-out;
+    transition: all 0.5s ease-in-out;
+    width: 100%;
+}
+
+:focus {
+    outline: 0;
+}
+
+/* Label Styles*/
+
+label {
+    padding: 15px 5px;
+    font-size: 14px;
+    /* display: none; */
+    position: absolute;
+    top: 15px; /* in relation to position */
+    left: 26px;
+    color: #8BC34A;
+    -webkit-animation: silo-fade 0.2s;
+    -moz-animation: silo-fade 0.2s;
+    animation: silo-fade 0.2s;
+    max-width: 80%;
+}
+
+/* input[type="text"]:focus, 
+input[type="email"]:focus, 
+input[type="tel"]:focus, 
+input[type="password"]:focus {
+    background-color: #fff;
+} */
+
+form input:focus + label,
+form input[required]:valid + label,
+form input:not(:placeholder-shown) + label,
+form textarea:focus + label,
+form textarea:valid + label,
+form textarea:not(:placeholder-shown) + label {
+    display: block;
+}
+
+form input:invalid {
+    border: 1px solid #b92326;
+    background-color: rgba(185, 35, 38, 0.25);
+}
+
+form input:focus:invalid {
+    background-color: transparent;
+    border: 1px solid #b92326;
+}
+
+form input:invalid + label {
+    color: #b92326;
+}
+
+form input:focus:invalid + label:after {
+    content: " (" attr(data-help) ")";
+    animation: silo-help 100s;
+}
+
+form input:focus:invalid + label:after {
+    content: " (" attr(data-help) ")";
+}
+
+form input:valid {
+    border: 1px solid #8BC34A;
+    background-color: rgba(139, 195, 74, 0.25);
+}
+
+form input:focus:valid {
+    border: 1px solid #8BC34A;
+    background-color: transparent;
+}
+
+form input:valid + label {
+    color: #8BC34A;
+}
+
+form input:placeholder-shown {
+    background-color: transparent;
+    border: 1px solid #d8d8d8;
+}
+
+form input::placeholder {
+    color: #d8d8d8;
+}
+
+form input::-webkit-input-placeholder {
+    color: #d8d8d8;
+}
+
+form input:-ms-input-placeholder {
+    color: #d8d8d8;
+}
+
+form input::-moz-placeholder {
+    color: #d8d8d8;
+}
+
+form input:focus::placeholder {
+    color: transparent;
+}
+
+form input:focus::-webkit-input-placeholder {
+    color: transparent;
+}
+
+form input:focus:-ms-input-placeholder {
+    color: transparent;
+}
+
+form input:focus::-moz-placeholder {
+    color: transparent;
+}
+
+/* form input[type="submit"] {
+    background-color: transparent;
+    border: 1px solid #8BC34A;
+    color: #8BC34A;
+    padding: 5px 15px;
+    font-size: 16px;
+    font-size: 1rem;
+    margin: 15px auto;
+    vertical-align: middle;
+    display: block;
+    cursor: pointer;
+}
+form input[type="submit"]:hover {
+    background-color: rgba(139, 195, 74, 0.25);
+    border: 1px solid #8BC34A;
+} */
+
+
+
+
+
+
+
+
 
 .sign-up {
     flex: 1;

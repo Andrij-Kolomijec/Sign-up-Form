@@ -32,23 +32,23 @@ body {
     position: relative;
     top: 20vh;
     justify-content: center;
-    gap: 1rem;
+    gap: 1vw;
     background-color:rgba(0, 0, 0, 0.5);
     padding: 2vh;
     height: auto;
 }
 
 .logo {
-    height: 15vh;
+    height: calc((10vh + 5vw)/2);
     color: whitesmoke;
     max-width: 100%;
 }
 
 .odin-text {
-    font-size: 13vh;
+    font-size: calc((10vh + 5vw)/2);
     color: whitesmoke;
     font-family: Norse, sans-serif;
-    letter-spacing: 0.5rem;
+    letter-spacing: 0.8 vw;
 }
 
 .form-container {
@@ -68,6 +68,7 @@ body {
     justify-content: flex-end;
     padding: 40px;
     padding-bottom: 60px;
+    padding-right: 200px;
     font-weight: 600;
 }
 
@@ -101,7 +102,7 @@ form > [class$="-row"] {
     position: relative;
 
     /* min-height: 1px; */
-    padding: 25px;
+    padding: 30px 100px 0px 0px; /* Top Right Bottom Left */
     /* width: 100%; */
     /* flex: 1; */
     /* max-width: 100%; */
@@ -131,12 +132,12 @@ form input[type="password"] {
 /* Label Styles*/
 
 label {
-    padding: 15px 5px;
+    padding: 10px 10px;
     font-size: 14px;
-    /* display: none; */
+    display: none;
     position: absolute;
-    top: 15px; /* in relation to position */
-    left: 26px;
+    top: 25px; /* in relation to position */
+    left: 15px;
     color: #8BC34A;
     -webkit-animation: silo-fade 0.2s;
     -moz-animation: silo-fade 0.2s;

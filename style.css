@@ -49,7 +49,7 @@ body {
 .odin-text {
     font-size: calc((10vh + 5vw)/2);
     color: whitesmoke;
-    font-family: Norse, sans-serif;
+    font-family: Norse, 'Skranji', sans-serif;
     letter-spacing: 0.8 vw;
 }
 

@@ -19,6 +19,8 @@ body {
     flex-flow: wrap;
 }
 
+/* Left side */
+
 .image-container {
     background-image: url(./fern.jpg);
     background-position: center;
@@ -53,6 +55,8 @@ body {
     letter-spacing: 0.8 vw;
 }
 
+/* Right side */
+
 .form-container {
     display: flex;
     flex-direction: column;
@@ -81,36 +85,23 @@ body {
     flex-direction: column;
     justify-content: space-evenly;
     box-shadow: 0 10px 20px -2px rgb(22, 22, 22);
-    /* border: 2px solid black; */
-}
-
-h1 {
-    /* border: 2px solid black; */
 }
 
 form {
     display: flex;
-    /* flex-direction: column; */
     justify-content: space-between;
-    /* flex: 1; */
-    /* align-content: stretch; */
-    /* border: 2px solid black; */
     flex-wrap: wrap;
     max-width: 50vw;
 }
 
 form > [class$="-row"] {
     display: flex;
-    /* border: 2px solid yellow; */
     position: relative;
-    /* min-height: 1px; */
     margin: 30px 0px 0px 0px; /* Top Right Bottom Left */
-    /* width: 100%; */
-    /* flex: 1; */
-    /* max-width: 100%; */
 }
 
 /* Form Stuff */
+/* https://www.silocreativo.com/en/css-rescue-improving-ux-forms/ */
 
 form input[type="text"],
 form input[type="email"],
@@ -131,7 +122,7 @@ form input[type="password"] {
     outline: 0;
 }
 
-/* Label Styles*/
+/* Label Styles */
 
 label {
     padding: 0px 0px; /* Top/Bottom Right/left */ /* Adjusts position of the label */
@@ -230,7 +221,7 @@ form input:focus::-moz-placeholder {
     color: transparent;
 }
 
-/*Animations*/
+/* Animations */
 
 @-webkit-keyframes silo-fade {
     0% {
@@ -318,7 +309,54 @@ form input:focus::-moz-placeholder {
     }
 }
 
+/* Password verification */
 
+#message {
+    display: none;
+    /* display: flex; */
+    justify-content: space-between;
+}
+
+#password-requirements {
+    align-items: center;
+    flex-direction: column;
+}
+
+#password-match {
+    justify-content: center;
+}
+
+#password-match,
+#password-requirements {
+    flex: 1;
+    display: flex;
+}
+
+#message p {
+    font-size: 13px;
+}
+
+.valid {
+    color: green;
+}
+
+.valid:before {
+    position: relative;
+    left: -5px;
+    content: "✔";
+  }
+
+.invalid {
+    color: red;
+}
+
+.invalid:before {
+    position: relative;
+    left: -5px;
+    content: "✖";
+}
+
+/* Button stuff */
 
 .sign-up {
     flex: 1;
@@ -344,11 +382,10 @@ form input[type="submit"]:hover {
     border: 1px solid #8BC34A;
 } */
 
+/* Small screen */
+
 @media (max-width: 499px) {
     .image-overlay {
         position: static; 
-    }
-    .odin-text {
-        color: red;
     }
 }

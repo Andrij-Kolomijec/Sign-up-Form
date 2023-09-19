@@ -7,7 +7,7 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Skranji&display=swap" rel="stylesheet">
-    <!-- <script src="javascript.js" defer></script> -->
+    <script src="javascript.js" defer></script>
     <!-- <link rel="icon" href="favicon.png"> -->
     <title>Sign-up Form</title>
 </head>
@@ -54,7 +54,7 @@
                     </div>
 
                     <div class="password-row">
-                        <input type="password" id="password" placeholder="Password *" name="password" size="30" maxlength="245">
+                        <input type="password" id="password" pattern="(?=.*\d)(?=.*[a-z])(?=.*[A-Z]).{8,}" placeholder="Password *" name="password" size="30" maxlength="245">
                         <label for="password">Password</label>
                     </div>
 
@@ -62,8 +62,23 @@
                         <input type="password" id="confirm-password" placeholder="Confirm password *" size="30" maxlength="245">
                         <label for="confirm-password">Confirm password</label>
                     </div>
-
                 </form>
+
+                <div id="message">
+                    
+                    <div id="password-requirements">
+                        <div>
+                            <p id="letter" class="invalid">A <b>lowercase</b> letter</p>
+                            <p id="capital" class="invalid">A <b>capital (uppercase)</b> letter</p>
+                            <p id="number" class="invalid">A <b>number</b></p>
+                            <p id="length" class="invalid">Minimum <b>8 characters</b></p>
+                        </div>
+                    </div>
+                    <div id="password-match">
+                        <p id="match" class="invalid">Passwords match</p>
+                    </div>
+                </div>
+                
             </div>
 
             <div class="sign-up">

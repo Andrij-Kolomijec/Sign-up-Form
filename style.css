@@ -91,7 +91,8 @@ form {
     display: flex;
     justify-content: space-between;
     flex-wrap: wrap;
-    max-width: 50vw;
+    max-width: 1000px; /* So it does not form more columns */
+    /* border: 1px solid black; */
 }
 
 form > [class$="-row"] {
@@ -312,18 +313,44 @@ form input:focus::-moz-placeholder {
 /* Password verification */
 
 #message {
-    display: none;
-    /* display: flex; */
+    /* display: none; */
+    display: flex;
     justify-content: space-between;
+    flex-wrap: wrap;
+    /* border: 1px solid red; */
+    max-width: 1000px;
+
+    
 }
 
 #password-requirements {
     align-items: center;
     flex-direction: column;
+    position: absolute;
+}
+
+#password-requirements > div { /* #req */
+    display: flex;
+    flex-wrap: wrap;
+    padding-left: 5px;
+    gap: 10px;
+    display: none;
+    -webkit-animation: silo-fade 0.2s;
+    -moz-animation: silo-fade 0.2s;
+    animation: silo-fade 0.2s;
 }
 
 #password-match {
     justify-content: center;
+    position: absolute;
+}
+
+#password-match > p { /* #match */
+    display: none;
+    padding-left: 5px;
+    -webkit-animation: silo-fade 0.2s;
+    -moz-animation: silo-fade 0.2s;
+    animation: silo-fade 0.2s;
 }
 
 #password-match,
@@ -337,22 +364,22 @@ form input:focus::-moz-placeholder {
 }
 
 .valid {
-    color: green;
+    color: #8BC34A;
 }
 
 .valid:before {
     position: relative;
-    left: -5px;
+    left: -3px;
     content: "✔";
   }
 
 .invalid {
-    color: red;
+    color: rgba(185, 35, 38);
 }
 
 .invalid:before {
     position: relative;
-    left: -5px;
+    left: -3px;
     content: "✖";
 }
 

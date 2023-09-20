@@ -55,21 +55,21 @@
 
                     <div class="password-row">
                         <input type="password" id="password" pattern="(?=.*\d)(?=.*[a-z])(?=.*[A-Z]).{8,}" placeholder="Password *" name="password" size="30" maxlength="245">
-                        <label for="password">Password</label>
+                        <label for="password" data-help="Think of something secure.">Password</label>
                     </div>
 
                     <div class="confirm-row">
-                        <input type="password" id="confirm-password" placeholder="Confirm password *" size="30" maxlength="245">
-                        <label for="confirm-password">Confirm password</label>
+                        <input type="password" id="confirm-password" pattern="(?=.*\d)(?=.*[a-z])(?=.*[A-Z]).{8,}" placeholder="Confirm password *" size="30" maxlength="245">
+                        <label for="confirm-password" data-help="Passwords must match.">Confirm password</label>
                     </div>
                 </form>
 
                 <div id="message">
                     
                     <div id="password-requirements">
-                        <div>
+                        <div id="req">
                             <p id="letter" class="invalid">A <b>lowercase</b> letter</p>
-                            <p id="capital" class="invalid">A <b>capital (uppercase)</b> letter</p>
+                            <p id="capital" class="invalid">A <b>uppercase</b> letter</p>
                             <p id="number" class="invalid">A <b>number</b></p>
                             <p id="length" class="invalid">Minimum <b>8 characters</b></p>
                         </div>

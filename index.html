@@ -31,7 +31,7 @@
 
             <div class="form">
                 <h1>Let's do this!</h1>
-                <form>
+                <form id="myForm">
 
                     <div class="name-row">
                         <input type="text" id="name" placeholder="Name *" name="name" value="" pattern="^[^0-9]+$" size="30" maxlength="245" required>
@@ -54,12 +54,12 @@
                     </div>
 
                     <div class="password-row">
-                        <input type="password" id="password" pattern="(?=.*\d)(?=.*[a-z])(?=.*[A-Z]).{8,}" placeholder="Password *" name="password" size="30" maxlength="245">
+                        <input type="password" id="password" pattern="(?=.*\d)(?=.*[a-z])(?=.*[A-Z]).{8,}" placeholder="Password *" name="password" size="30" maxlength="245" required>
                         <label for="password" data-help="See below.">Password</label>
                     </div>
 
                     <div class="confirm-row">
-                        <input type="password" id="confirm-password" pattern="(?=.*\d)(?=.*[a-z])(?=.*[A-Z]).{8,}" placeholder="Confirm password *" size="30" maxlength="245">
+                        <input type="password" id="confirm-password" pattern="(?=.*\d)(?=.*[a-z])(?=.*[A-Z]).{8,}" placeholder="Confirm password *" size="30" maxlength="245" required>
                         <label id="psw-label" for="confirm-password" data-help="Password must be secure.">Confirm password</label>
                     </div>
                 </form>
@@ -82,8 +82,8 @@
             </div>
 
             <div class="sign-up">
-                <button>Create Account</button>
-                <p>Already have and account? Log In</p>
+                <input id="submit-button" type="submit" form="myForm" value="Create Account"/>
+                <p>Already have and account? <a href="YOLO" style="color: #596D48; font-weight: bold; text-decoration: none;">Log In</a></p>
             </div>
         </div>
 

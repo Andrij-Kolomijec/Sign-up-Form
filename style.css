@@ -386,28 +386,35 @@ form input:focus::-moz-placeholder {
 /* Button stuff */
 
 .sign-up {
-    flex: 1;
+
     background: whitesmoke;
-    padding: calc(2vw + 4vh);
+    padding: calc(1vw + 2vh) calc(2vw + 4vh);
 }
 
-
-/* form input[type="submit"] {
-    background-color: transparent;
-    border: 1px solid #8BC34A;
-    color: #8BC34A;
-    padding: 5px 15px;
-    font-size: 16px;
-    font-size: 1rem;
-    margin: 15px auto;
-    vertical-align: middle;
-    display: block;
-    cursor: pointer;
+.sign-up > input {
+    margin-bottom: 2vh;
+    background-color: #596D48;
+    color: whitesmoke;
+    border-radius: 10px;
+    font-weight: bold;
+    font-size: 26px;
+    padding: 10px 50px;
+    border-style: inset;
 }
-form input[type="submit"]:hover {
-    background-color: rgba(139, 195, 74, 0.25);
-    border: 1px solid #8BC34A;
-} */
+
+.sign-up > input:hover {
+    background-color: #283d15;
+    transition: 0.5s;
+}
+
+.sign-up > input:active {
+    background-color: green;
+    border-style: outset;
+}
+
+.sign-up > p {
+    font-size: 20px;
+}
 
 /* Small screen */
 

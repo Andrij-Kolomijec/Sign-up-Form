@@ -55,12 +55,12 @@
 
                     <div class="password-row">
                         <input type="password" id="password" pattern="(?=.*\d)(?=.*[a-z])(?=.*[A-Z]).{8,}" placeholder="Password *" name="password" size="30" maxlength="245">
-                        <label for="password" data-help="Think of something secure.">Password</label>
+                        <label for="password" data-help="See below.">Password</label>
                     </div>
 
                     <div class="confirm-row">
                         <input type="password" id="confirm-password" pattern="(?=.*\d)(?=.*[a-z])(?=.*[A-Z]).{8,}" placeholder="Confirm password *" size="30" maxlength="245">
-                        <label for="confirm-password" data-help="Passwords must match.">Confirm password</label>
+                        <label id="psw-label" for="confirm-password" data-help="Password must be secure.">Confirm password</label>
                     </div>
                 </form>
 

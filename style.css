@@ -4,8 +4,8 @@
 }
 
 @font-face {
-    font-family: Norse;
-    src: url(../Norse-Bold.otf);
+    font-family:"Norse";
+    src:url("Norse-Bold.eot?") format("eot"),url("Norse-Bold.woff") format("woff"),url("Norse-Bold.ttf") format("truetype"),url("Norse-Bold.svg#Norse-Bold") format("svg");
 }
 
 body {
@@ -52,7 +52,7 @@ body {
 .odin-text {
     font-size: calc((10vh + 5vw)/2);
     color: whitesmoke;
-    font-family: Norse, 'Skranji', sans-serif;
+    font-family: 'Norse', 'Skranji', sans-serif;
     letter-spacing: 0.8 vw;
 }
 

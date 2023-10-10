@@ -1,4 +1,6 @@
 # Sign-up-Form
-The Odin Project
+[The Odin Project](https://www.theodinproject.com/)
 
-visit here https://andrij-kolomijec.github.io/Sign-up-Form/
+[:arrow_forward: visit here](https://andrij-kolomijec.github.io/Sign-up-Form/)
+
+topics: css, forms
